@@ -12,18 +12,23 @@ router.post('/demo/post', (req, res) => {
     res.send(request);
 });
 
+router.post('/demo', (req, res) => {
+  const request = req.body;
+  res.send(request);
+});
+
 router.get('/user', (req, res) => {
   const data = [
     {
-      name: 'jaini',
+      name: 'jaini shah',
       email: 'jaini.shivinfotech@gmail.com'
     },
     {
-      name: 'bansari',
+      name: 'bansari patel',
       email: 'bansari.shivinfotech@gmail.com'
     },
     {
-      name: 'dhara',
+      name: 'dhara shah',
       email: 'dhara.shivinfotech@gmail.com'
     }
   ]
