@@ -1,11 +1,11 @@
 {
   "name": "shared_demo_git",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "winston": "^3.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiv-node-dns138/node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shiv-node-dns138/node/issues"
+  },
+  "homepage": "https://github.com/shiv-node-dns138/node#readme",
+  "description": ""
 }
