@@ -3,14 +3,14 @@ import winston from 'winston';
 winston.add(new winston.transports.Console,{ level: 'info', colorize: true });
 const router = express();
 
-router.get('/demo', (req, res) => {
-        res.send('Hello world!!');
-});
-
-router.post('/demo/post', (req, res) => {
+router.post('/demo1/post', (req, res) => {
     const request = req.body;
     res.send(request);
 });
+
+
+router.get('/demo1/new', (req, res) => {
+    res.send('This is my new api');
 
 router.post('/demo', (req, res) => {
   const request = req.body;
@@ -37,6 +37,7 @@ router.get('/user', (req, res) => {
 })
 router.get('/demo/new', (req, res) => {
     res.send('this is my new api');
+
 });
 
  const port = 3001;
