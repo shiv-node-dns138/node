@@ -12,7 +12,7 @@ router.post('/demo/post', (req, res) => {
     res.send(request);
 });
 
-router.post('/demo', (req, res) => {
+router.post('/user', (req, res) => {
   const request = req.body;
   res.send(request);
 });
