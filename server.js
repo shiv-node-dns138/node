@@ -8,11 +8,10 @@ router.post('/demo1/post', (req, res) => {
     res.send(request);
 });
 
-
 router.get('/demo1/new', (req, res) => {
     res.send('This is my new api');
 
-router.post('/demo', (req, res) => {
+router.post('/user', (req, res) => {
   const request = req.body;
   res.send(request);
 });
